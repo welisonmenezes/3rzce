@@ -83,6 +83,10 @@ select::-ms-expand {
 
 
 
+.modal-lg {
+    max-width: 910px;
+}
+
 
 
 
@@ -183,6 +187,11 @@ a, button {
     color: #fff !important;
     font-size: 18px !important;
 }
+.btn-secondary {
+    background: #f6f6f6 !important;
+    color: #adadad !important;
+    font-size: 18px !important;
+}
 
 .btn-link {
     padding: 0;
@@ -198,6 +207,10 @@ a, button {
 .text-white b {
     font-weight: normal;
     color: #60d2dd;
+}
+
+.text-green {
+    color: #62d6dc !important;
 }
 
 
@@ -292,6 +305,86 @@ h2.title-default {
     margin-bottom: 0;
 }
 
+.input-info {
+    font-size: 12px;
+    color: #adadad;
+}
+
+.circle-number {
+    width: 30px;
+    height: 30px;
+    background: #62d6dc;
+    font-size: 18px;
+    color: #081733;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 30px;
+    display: block;
+}
+
+.steps {
+    padding: 30px 25px;
+}
+.steps .row {
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.steps .row > div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.steps h4 {
+    color: #081733;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+.steps .wm-custom-checkbox .label {
+    color: #081733;
+    font-size: 18px;
+}
+.steps .form-control,
+.steps .wm-inputfile .form-control {
+    background-color: #f6f6f6;
+}
+.steps .form-control:focus {
+    border-color: #ced4da;
+}
+
+.step .step-body > div {
+    display: none;
+}
+.step.active .step-body > div {
+    display: block;
+}
+
+.step-header {
+    align-items: center;
+    margin-bottom: 8px;
+}
+.step-header .circle-number {
+    margin-right: 16px;
+}
+.step-header h3 {
+    color: #60d2dd;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.step-body {
+    margin-left: 15px;
+    padding-left: 30px;
+    border-left: 1px solid #62d6dc;
+    margin-bottom: 8px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.step-body.no-border {
+    border-left: none;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
 
 
 
@@ -342,6 +435,10 @@ select.form-control {
     border-bottom: none;
 }
 
+.fields-spaced .form-group {
+    margin-bottom: 7px;
+}
+
 .form-default .fields-as-row {
     margin-bottom: 10px;
 }
@@ -351,6 +448,9 @@ select.form-control {
 .form-default a {
     font-size: 14px;
     color: #5fcedc;
+}
+.form-default .fields-spaced {
+    margin-bottom: 15px;
 }
 
 .wm-custom-radio,
@@ -503,6 +603,43 @@ select.form-control {
     height: 25px;
     padding-left: 25px;
     background: url(../img/pngicons/arrow-up-purple.png) no-repeat left center;
+}
+
+
+.radio-as-btn {
+    position: relative;
+    cursor: pointer;
+}
+.radio-as-btn input {
+    position: absolute;
+    cursor: pointer;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    -moz-opacity: 0;
+    -khtml-opacity: 0;
+    opacity: 0;
+}
+.radio-as-btn input:checked ~ .btn-secondary {
+    background: #747ae5 !important;
+    color: #fff !important;
+}
+
+.wm-inputfile {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+}
+.wm-inputfile > input {
+    visibility: hidden;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    top: 1000px;
+    left: -1000px;
+}
+.wm-inputfile .form-control {
+    background: url(../img/pngicons/attach-black.png) no-repeat 96% center;
 }
 
 .form-register .form-group {

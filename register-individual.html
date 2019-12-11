@@ -32,118 +32,251 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
-							<form class="form-default form-register" novalidate>
-								<h1 class="title-default green">
-									Register in 3RZ CRYPTO EXCHANGE
-								</h1>
 
-								<h2 class="title-default white">Individual</h2>
-								<div class="fields-as-row">
-									<div class="form-group">
-										<input type="email" class="form-control" placeholder="E-mail">
-									</div>
-									<div class="form-group">
-										<input type="email" class="form-control" placeholder="E-mail Confirmation">
-									</div>
-									<div class="form-group field-ind">
-										<input type="text" class="form-control" placeholder="First Name">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Last Name">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Date of Birth">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Tax ID">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Tax ID Country">
-									</div>
-								</div>
-								<div class="form-group text-right mb-20">
-									<button type="button" class="btn-link">Edit</button>
-								</div>
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-lg">Mostrar formulário</button>
+							<div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+								<div class="modal-dialog modal-lg modal-dialog-centered">
+									<div class="modal-content">
+									
+										<div class="steps">
 
-								<h2 class="title-default white">Add More Information to your Profile</h2>
-								<div class="fields-as-row mb-30">
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Citizenship">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Place of Birth">
-									</div>
-									<div class="form-group">
-										<select class="form-control">
-											<option value="">Type of Identification</option>
-											<option value="1">Option 1</option>
-											<option value="2">Option 2</option>
-											<option value="3">Option 3</option>
-										</select>
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Identification Number">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Identification Expiration Date">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Identification Issuing Country">
-									</div>
-									<div class="form-group">
-										<input type="tel" class="form-control" placeholder="Phone Number">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Individual Country Address">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Individual Zipcode Address">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Individual Sstate Address">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Individual City Address">
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Individual Full Address">
-									</div>
-								</div>
+											<div class="step step-1 active">
+												<div class="step-header d-flex">
+													<span class="circle-number">1</span>
+													<h3>Identidade</h3>
+												</div>
+												<div class="step-body">
+													<div>
 
-								<h2 class="title-default white">Upload files</h2>
-								<div class="form-group">
-									<label class="nice-input-file">
-										<input type="file">
-										<span>Identification Document</span>
-									</label>
+														<h4>Forneça um documento de identificação</h4>
+														<div class="row mb-20">
+															<div class="col-md-6">
+																<label class="radio-as-btn d-block">
+																	<input type="radio" name="test1" checked value="individual">
+																	<span class="btn btn-secondary btn-block">Carteira de Identidade</span>
+																</label>
+															</div>
+															<div class="col-md-6">
+																<label class="radio-as-btn d-block">
+																	<input type="radio" name="test1" value="individual">
+																	<span class="btn btn-secondary btn-block">Carteira de Motorista</span>
+																</label>
+															</div>
+														</div>
+
+														<h4 class="text-green">Frente</h4>
+														<div class="form-group mb-20">
+															<label class="wm-inputfile">
+																<input type="file">
+																<span class="form-control">Selecionar o Arquivo</span>
+															</label>
+															<p class="input-info">Aceita: PNG, JPG, JPEG ou PDF. Máximo: 5MB</p>
+														</div>
+
+														<h4 class="text-green">Verso</h4>
+														<div class="form-group mb-20">
+															<label class="wm-inputfile">
+																<input type="file">
+																<span class="form-control">Selecionar o Arquivo</span>
+															</label>
+															<p class="input-info">Aceita: PNG, JPG, JPEG ou PDF. Máximo: 5MB</p>
+														</div>
+
+														<h4 class="text-green">Para agilizar sua aprovação:</h4>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">Os documentos pertencem ao titular da conta?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">O ambiente da fotografia está bem iluminado?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-30">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">A fotografia está o mais frontal possível?</span>
+									                        </label>
+														</div>
+
+														<div class="form-action">
+															<button type="button" class="btn btn-primary" onclick="goToStep(2)">Continuar</button>
+														</div>
+
+													</div>
+												</div>
+											</div>
+
+											<div class="step step-2">
+												<div class="step-header d-flex">
+													<span class="circle-number">2</span>
+													<h3>Autenticação</h3>
+												</div>
+												<div class="step-body">
+													<div>
+
+														<h4 class="mb-30">
+															Forneça uma foto própria (selfie) segurando sua identidade, junto com uma folha de papel escrito <b>MyProjectName</b> e a data de hoje <b>10/12/2019</b>:
+														</h4>
+
+														<h4 class="text-green">Selfie</h4>
+														<div class="form-group mb-20">
+															<label class="wm-inputfile">
+																<input type="file">
+																<span class="form-control">Selecionar o Arquivo</span>
+															</label>
+															<p class="input-info">Aceita: PNG, JPG, JPEG ou PDF. Máximo: 5MB</p>
+														</div>
+
+														<h4 class="text-green">Para agilizar sua aprovação:</h4>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">O documento pertence ao titular da conta?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">Está segurando sua identidade com a foto voltada para a câmera?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">Na folha tem escrito “MyProjectName“?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">Na folha tem a data de hoje: 10/12/2019?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-30">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">O ambiente da fotografia está bem iluminado?</span>
+									                        </label>
+														</div>
+
+														<div class="form-action">
+															<button type="button" class="btn btn-primary" onclick="goToStep(3)">Continuar</button>
+														</div>
+													
+													</div>
+												</div>
+											</div>
+
+											<div class="step step-3">
+												<div class="step-header d-flex">
+													<span class="circle-number">3</span>
+													<h3>Endereço</h3>
+												</div>
+												<div class="step-body">
+													<div>
+
+														<h4>Forneça seu endereço atual:</h4>
+														<div class="fields-spaced mb-20">
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Endereço Completo">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Código Postal">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Bairro">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Cidade">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="Estado">
+															</div>
+															<div class="form-group">
+																<input type="text" class="form-control" placeholder="País">
+															</div>
+														</div>
+
+														<h4>Forneça um Comprovante de Residência:</h4>
+														<div class="form-group mb-20">
+															<label class="wm-inputfile">
+																<input type="file">
+																<span class="form-control">Selecionar o Arquivo</span>
+															</label>
+															<p class="input-info">Aceita: PNG, JPG, JPEG ou PDF. Máximo: 5MB</p>
+														</div>
+
+														<h4 class="text-green">Para agilizar sua aprovação:</h4>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">O documento pertence ao titular da conta?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-10">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">O ambiente da fotografia está bem iluminado?</span>
+									                        </label>
+														</div>
+														<div class="form-group mb-30">
+															<label class="wm-custom-checkbox right noselect">
+									                            <input type="checkbox" name="test3" value="business">
+									                            <span class="checkmark"></span>
+									                            <span class="label">A fotografia está o mais frontal possível?</span>
+									                        </label>
+														</div>
+
+														<div class="form-action">
+															<button type="button" class="btn btn-primary" onclick="goToStep(4)">Continuar</button>
+														</div>
+													
+													</div>
+												</div>
+											</div>
+
+											<div class="step step-4">
+												<div class="step-header d-flex">
+													<span class="circle-number">4</span>
+													<h3>Confirmação</h3>
+												</div>
+												<div class="step-body no-border">
+													<div>
+
+														<div class="mb-30">
+															<h4><b>Documentos enviados!</b></h4>
+															<p>Seus documentos estão sendo analisados.</p>
+															<p>Dentro de até 48h você receberá um e-mail com a nossa resposta.</p>
+														</div>
+
+														<div class="form-action">
+															<button type="button" class="btn btn-primary">Finalizar</button>
+														</div>
+													
+													</div>
+												</div>
+											</div>
+
+										</div>
+
+									</div>
 								</div>
-								<div class="form-group">
-									<label class="nice-input-file">
-										<input type="file">
-										<span>Selfie with your identification document</span>
-									</label>
-								</div>
-								<div class="form-group mb-40">
-									<label class="nice-input-file">
-										<input type="file">
-										<span>Proof of Individual Address (90 days maximum)</span>
-									</label>
-								</div>
-								
-								<div class="form-group mb-15">
-									<label class="wm-custom-checkbox right noselect">
-			                            <input type="checkbox" name="test2">
-			                            <span class="checkmark"></span>
-			                            <span class="label">I accept the terms of use</span>
-			                        </label>
-								</div>
-								<div class="form-action">
-									<button type="submit" class="btn btn-primary btn-block">Register</button>
-								</div>
-								<div class="form-extras">
-									<a href="#" class="" title="I already have Registration">I already have Registration</a>
-								</div>
-							</form>
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -154,5 +287,18 @@
 	<script src="vendors/popper.min.js"></script>
 	<script src="vendors/bootstrap-4.1.3/js/bootstrap.min.js"></script>
 	<script src="js/app.js"></script>
+	
+	<script>
+		$('.bd-example-modal-lg').modal('show');
+
+		function goToStep(step) {
+			$('.step').removeClass('active');
+			$('.step.step-' + step).addClass('active');
+
+			document.body.scrollTop = 0;
+  			document.documentElement.scrollTop = 0;
+		}
+	</script>
+
 </body>
 </html>
