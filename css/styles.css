@@ -51,9 +51,9 @@ body {
 ul, ol, li {
     list-style: none;
 }
-a:hover {
+/*a:hover {
     text-decoration: none;
-}
+}*/
 div, ul, li, ol, blockquote, p, h1, h2, h3, h4, h5, h6, figure {
     padding: 0;
     margin: 0;
@@ -244,6 +244,7 @@ a, button {
 .ul-menu a.active {
     color: #fff;
     background: #747ae5;
+    text-decoration:  none;
 }
 .ul-menu li {
     margin: 0 10px;
