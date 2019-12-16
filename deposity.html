@@ -68,37 +68,32 @@
 						<div class="col-md-12">
 							<form class="form-default form-deposity" novalidate>
 								<h1 class="title-default green">Deposity</h1>
-								<div class="fields-as-row">
-									<div class="form-group">
-										<select class="form-control">
-											<option value="">BRL</option>
-											<option value="1">BRZ</option>
-										</select>
-									</div>
-									<div class="form-group form-info-text">
-										<h3>Your current brl balance</h3>
-										<p>50.000,00</p>
-									</div>
-									<div class="form-group">
-										<select class="form-control">
-											<option value="">Select Another Bank</option>
-											<option value="1">Option 1</option>
-											<option value="2">Option 2</option>
-											<option value="3">Option 3</option>
-										</select>
-									</div>
-									<div class="form-group form-info-text">
-										<p>Bank: 341 - Itaú</p>
-										<p>Social Name: Throruss LTDA</p>
-										<p>Agency: 1500</p>
-										<p>Account: 05201-2</p>
-									</div>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Enter Amount">
-									</div>
+								<div class="mb-30">
+									<h2 class="title-default green">Dados para depósito:</h2>
+									<ul class="ul-deposit-data">
+										<li>Bank: 341 - Itaú</li>
+										<li>Social Name: Throruss LTDA</li>
+										<li>Agency: 1500</li>
+										<li>Account: 05201-2</li>
+									</ul>
 								</div>
+
+								<label class="label-default text-green">Amount</label>
+								<div class="form-group mb-30">
+									<input type="text" class="form-control" placeholder="Enter Amount">
+								</div>
+
+								<label class="label-default text-green">Anexar Comprovante de Depósito</label>
+								<div class="form-group mb-30">
+									<label class="wm-inputfile">
+										<input type="file">
+										<span class="form-control">Selecionar o Arquivo</span>
+									</label>
+									<p class="input-info text-white">Aceita: PNG, JPG, JPEG ou PDF. Máximo: 5MB</p>
+								</div>
+
 								<div class="form-action">
-									<button type="submit" class="btn btn-primary btn-block">Send BRL</button>
+									<button type="submit" class="btn btn-primary">Confirmar</button>
 								</div>
 							</form>
 							

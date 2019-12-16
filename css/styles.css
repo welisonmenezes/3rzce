@@ -202,7 +202,7 @@ a, button {
 
 .text-white {
     font-size: 18px;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 .text-white b {
     font-weight: normal;
@@ -211,6 +211,11 @@ a, button {
 
 .text-green {
     color: #62d6dc !important;
+}
+
+.label-default {
+    display: block;
+    font-size: 18px;
 }
 
 
@@ -384,6 +389,11 @@ h2.title-default {
     border-left: none;
     padding-top: 0;
     padding-bottom: 0;
+}
+
+.ul-deposit-data {
+    color: #fff;
+    font-size: 18px;
 }
 
 
@@ -640,7 +650,7 @@ select.form-control {
     left: -1000px;
 }
 .wm-inputfile .form-control {
-    background: url(../img/pngicons/attach-black.png) no-repeat 96% center;
+    background: #fff url(../img/pngicons/attach-black.png) no-repeat 96% center;
 }
 
 .form-register .form-group {
@@ -750,18 +760,28 @@ select.form-control {
     display: none;
 }
 
+.sct-deposity {
+    padding-top: 100px !important;
+}
 .sct-deposity .form-default {
-    max-width: 490px;
+    max-width: 800px;
     margin: 0 auto;
     margin-bottom: 100px;
 }
 .sct-deposity .deposity-data {
-    max-width: 610px;
+    max-width: 800px;
     margin: 0 auto;
 }
 .sct-deposity .title-default {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     font-size: 22px;
+}
+.sct-deposity h2.title-default {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.sct-deposity .wm-inputfile .form-control {
+    color: #b7b7b7;
 }
 
 .sct-recover-password .form-default {
